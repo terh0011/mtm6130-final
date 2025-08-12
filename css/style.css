@@ -1,0 +1,227 @@
+/* style.css */
+
+/* ===== Global Styles ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ===== Header ===== */
+header {
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+
+header .logo img {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+nav a:hover,
+nav a.active {
+  background: #cfa52a;
+  color: #000;
+  border-radius: 4px;
+}
+
+.search-form input {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: none;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+}
+
+.hero-text p {
+  margin-bottom: 15px;
+}
+
+.btn {
+  background: #cfa52a;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* ===== About & Vision ===== */
+#about,
+.vision {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+#about img,
+.vision img {
+  flex: 1;
+}
+
+#about div,
+.vision div {
+  flex: 1;
+}
+
+/* ===== Services Section ===== */
+#services {
+  padding: 40px;
+  background: #f5f5f5;
+}
+
+#services h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service {
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ===== Team ===== */
+#team {
+  padding: 40px;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.team-member {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.team-member img {
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+/* ===== Contact & Hours ===== */
+#contact,
+.hours {
+  padding: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+textarea,
+button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background: #cfa52a;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #000;
+  color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
